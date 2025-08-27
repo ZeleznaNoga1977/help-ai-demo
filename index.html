@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sustainable Agricultural Drone System – Objectives, Results & Expected Impacts</title>
+  <meta name="description" content="Publish-ready Horizon Europe tables and narrative for a sustainable agricultural drone system integrating multispectral imaging and AI analytics for precision agriculture." />
+  <style>
+    :root{
+      --bg: #0b1020;
+      --panel: #12172a;
+      --ink: #eef2ff;
+      --ink-dim: #c7ccf8;
+      --accent: #7c9cff;
+      --accent-2: #00d4b3;
+      --muted: #8b93bd;
+      --border: #222949;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial;
+      background: radial-gradient(1200px 600px at 30% -10%, #10173a 0%, transparent 50%), linear-gradient(180deg, var(--bg), #0e1430 60%);
+      color: var(--ink);
+      line-height:1.55;
+    }
+    .wrap{max-width:1200px; margin:0 auto; padding:32px 20px 84px}
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap}
+    h1{font-size: clamp(1.4rem, 1.2rem + 1.5vw, 2.2rem); margin:0}
+    .sub{color:var(--ink-dim); margin-top:6px; font-size:0.98rem}
+    .btns{display:flex; gap:10px; flex-wrap:wrap}
+    button, a.btn{
+      appearance:none; border:none; cursor:pointer; text-decoration:none;
+      background:linear-gradient(180deg, var(--accent), #5476ff);
+      color:white; padding:10px 14px; border-radius:14px; font-weight:600; box-shadow:0 6px 18px rgba(124,156,255,.25);
+      transition: transform .06s ease, box-shadow .2s ease; font-size:0.95rem
+    }
+    button:hover, a.btn:hover{transform: translateY(-1px); box-shadow:0 9px 24px rgba(124,156,255,.35)}
+    .btn-ghost{background:transparent; border:1px solid var(--border); color:var(--ink-dim)}
+
+    .panel{background:var(--panel); border:1px solid var(--border); border-radius:18px; padding:18px}
+    h2{font-size:1.25rem; margin:6px 0 12px}
+    h3{font-size:1.05rem; margin:0 0 8px; color:#dfe3ff}
+    .note{color:var(--ink-dim); font-size:0.96rem}
+
+    .table-wrap{overflow:auto; border-radius:14px; border:1px solid var(--border)}
+    table{width:100%; border-collapse:separate; border-spacing:0; min-width:880px;}
+    thead th{position:sticky; top:0; background:#0c1230; color:#e1e6ff; text-align:left; font-weight:700; font-size:0.95rem; border-bottom:1px solid var(--border); padding:12px}
+    tbody td{padding:12px; vertical-align:top; border-bottom:1px solid var(--border); color:#dfe3ff}
+    tbody tr:nth-child(odd) td{background:rgba(255,255,255,0.015)}
+    tbody tr:hover td{background:rgba(124,156,255,0.06)}
+    td small{color:var(--muted)}
+    .tag{display:inline-block; padding:2px 8px; border-radius:999px; background:#0b163a; border:1px solid var(--border); color:#cad1ff; font-size:0.8rem; margin:2px 6px 2px 0}
+    .kpi{color:var(--accent-2); font-weight:700}
+    .legend{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .legend .chip{padding:6px 10px; border-radius:999px; border:1px solid var(--border); background:#0f1533; color:#c8ceff; font-size:0.85rem}
+
+    footer{margin-top:36px; color:var(--muted); font-size:0.9rem}
+    .spacer{height:8px}
+    @media (max-width:720px){ .btns{width:100%} header{gap:10px} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Sustainable Agricultural Drone System – Objectives, Results & Expected Impacts</h1>
+        <p class="sub">Horizon Europe alignment: precision agriculture with multispectral imaging and AI analytics to boost productivity and cut resource use by <strong>≥30%</strong> within 36 months.</p>
+      </div>
+      <div class="btns">
+        <button onclick="window.print()" title="Print or save as PDF">🖨️ Print / Save PDF</button>
+        <a class="btn btn-ghost" href="#impacts-detailed">Jump to Impacts</a>
+        <a class="btn btn-ghost" href="#narrative">Jump to Narrative</a>
+      </div>
+    </header>
+
+    <section class="panel">
+      <h2>1) Alignment Table – Objectives → Expected Results → Expected Impacts</h2>
+      <p class="note">Concise mapping used by evaluators to check logic, SMART objectives, and policy relevance.</p>
+      <div class="table-wrap">
+        <table aria-label="Alignment table: objectives, results, impacts, EU priority">
+          <thead>
+            <tr>
+              <th style="width:28%">Objective (SMART)</th>
+              <th style="width:28%">Expected Result (Output)</th>
+              <th style="width:30%">Expected Impact (Effect / Change)</th>
+              <th style="width:14%">EU Priority Addressed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>To develop and integrate a drone platform equipped with multispectral imaging and AI-powered analytics, reaching TRL6–7 by <strong>M30</strong>.</td>
+              <td>Prototype drone system with validated imaging→AI pipeline; interoperable API for major farm management tools.</td>
+              <td>Farmers gain reliable crop diagnostics and precise variable-rate prescriptions; early adopters demonstrate efficiency gains.</td>
+              <td><span class="tag">Green Deal</span> <span class="tag">Digital Transition</span></td>
+            </tr>
+            <tr>
+              <td>To validate the system across multiple crops and ≥6 pilot sites covering <strong>≥10,000 ha</strong>, demonstrating a <strong>30%</strong> reduction in resource use within <strong>36 months</strong>.</td>
+              <td>Pilot datasets, validated indices, VRA recommendations, and field trial reports evidencing reduced water, fertiliser, and pesticide inputs.</td>
+              <td>Resource use reduced by ≥30% while maintaining/increasing yields; measurable reductions in GHG emissions.</td>
+              <td><span class="tag">Farm to Fork</span> <span class="tag">Zero Pollution</span></td>
+            </tr>
+            <tr>
+              <td>To build an AI decision-support engine with explainability and human-in-the-loop oversight by <strong>M24</strong>.</td>
+              <td>Explainable AI engine, dashboards, and audit trails; interoperability with irrigation and spraying equipment.</td>
+              <td>Higher trust and adoption by farmers and regulators; safer, transparent precision farming decisions.</td>
+              <td><span class="tag">Data Economy</span> <span class="tag">Responsible AI</span></td>
+            </tr>
+            <tr>
+              <td>To establish a go-to-market toolkit and training programme for <strong>≥150</strong> users across the value chain by <strong>M36</strong>.</td>
+              <td>Business/service models, ROI calculator, training curricula, certification & SOP packs.</td>
+              <td>Faster scaling via cooperatives and service SMEs; affordable access for smallholders.</td>
+              <td><span class="tag">SME Competitiveness</span> <span class="tag">Skills Agenda</span></td>
+            </tr>
+            <tr>
+              <td>To ensure regulatory, safety, ethics and sustainability conformity (EASA, data protection, LCA) and produce <strong>2</strong> policy briefs by <strong>M30</strong>.</td>
+              <td>Safety & conformity dossiers; LCA & GHG accounting; standardisation and policy briefs.</td>
+              <td>Safe operations and evidence contribution to CAP implementation and EU drone/agri standards.</td>
+              <td><span class="tag">Safety & Regulation</span> <span class="tag">CAP</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="impacts-detailed" class="panel">
+      <h2>2) Expected Impacts – Detailed (KPIs, Adoption Pathways, Risks)</h2>
+      <div class="table-wrap">
+        <table aria-label="Detailed expected impacts table with KPIs and pathways">
+          <thead>
+            <tr>
+              <th style="width:12%">Impact Level</th>
+              <th style="width:24%">Change Description</th>
+              <th style="width:24%">KPIs (baseline → target)</th>
+              <th style="width:16%">Target Stakeholders</th>
+              <th style="width:16%">Adoption Pathway</th>
+              <th style="width:8%">Risks & Mitigation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Individual</strong><br/><small>Farmers, agronomists</small></td>
+              <td>Improved crop diagnostics; faster, better decisions; reduced effort and input costs.</td>
+              <td><span class="kpi">–30%</span> water/fertiliser/pesticide use (baseline: farm audits) by <strong>M36</strong>.<br/> <span class="kpi">+8–12%</span> yield increase by <strong>M36</strong>.<br/> <span class="kpi">–40%</span> decision time by <strong>M24</strong>.<br/> <span class="kpi">≥150</span> trained, <span class="kpi">≥80%</span> competency gain.</td>
+              <td>Farmers (incl. smallholders), agronomists, operators.</td>
+              <td>Demos & field schools; Drones‑as‑a‑Service; ROI calculator; micro‑credentials.</td>
+              <td>Adoption resistance → peer champions, simple UX.<br/>ROI uncertainty → cost–benefit dashboards.</td>
+            </tr>
+            <tr>
+              <td><strong>Institutional</strong><br/><small>Co‑ops, service SMEs</small></td>
+              <td>Operational efficiency, new service offerings, safer operations.</td>
+              <td><span class="kpi">–20%</span> service cost/ha.<br/> <span class="kpi">≥3</span> OEM connectors live by <strong>M24</strong>.<br/> <span class="kpi">–50%</span> scan→prescription time.</td>
+              <td>Cooperatives, service SMEs, OEMs.</td>
+              <td>Service playbooks; certification packs; open API & data‑sharing templates; marketplace access.</td>
+              <td>Interoperability → open APIs.<br/>Workforce gaps → training & certification.</td>
+            </tr>
+            <tr>
+              <td><strong>Environmental</strong></td>
+              <td>Lower input intensity and emissions with precision application.</td>
+              <td><span class="kpi">–30%</span> water (m³/ha).<br/> <span class="kpi">–20–30%</span> fertiliser N (kg/ha).<br/> <span class="kpi">–25%</span> pesticide TFI.<br/> <span class="kpi">–15–25%</span> GHG emissions (t CO₂e/ha).</td>
+              <td>Farmers, water agencies, environment, communities.</td>
+              <td>VRA irrigation/fertility modules; LCA evidence; integration with eco‑schemes for incentives.</td>
+              <td>Weather variability → multi‑season pilots.<br/>Edge cases → agronomist override.</td>
+            </tr>
+            <tr>
+              <td><strong>Economic</strong></td>
+              <td>Improved farm profitability and SME revenues.</td>
+              <td><span class="kpi">+10–15%</span> net margin/ha.<br/> Payback ≤ <span class="kpi">2–3</span> seasons.<br/> <span class="kpi">≥300</span> farms, <span class="kpi">≥100k</span> ha mapped by <strong>M36</strong>.</td>
+              <td>Farms, SMEs, cooperatives, insurers, financiers.</td>
+              <td>Subscription/leasing models; insurer tie‑ins; financing playbooks and staged payments.</td>
+              <td>Capital costs → DaaS & leasing.<br/>Cash‑flow → staged payments.</td>
+            </tr>
+            <tr>
+              <td><strong>Policy / System</strong></td>
+              <td>Evidence for safe drone ops, responsible data use, and standards input.</td>
+              <td><span class="kpi">≥2</span> briefs cited in strategies post‑project.<br/> <span class="kpi">≥2</span> standards groups engaged.<br/> Community of practice: <span class="kpi">≥50</span> members.</td>
+              <td>Ministries, agencies, standardisation bodies, CAP networks.</td>
+              <td>Policy roundtables; open datasets; regulatory alignment; social partner endorsements.</td>
+              <td>Regulatory delays → early engagement with CAAs; SORA templates.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="legend">
+        <span class="chip">KPIs highlighted in <span class="kpi">green</span></span>
+        <span class="chip">Outputs released under <strong>CC BY</strong> where applicable</span>
+      </div>
+    </section>
+
+    <section id="narrative" class="panel">
+      <h2>3) Proposal‑Style Narrative</h2>
+      <p>
+        The proposed action will deliver a <strong>sustainable agricultural drone system</strong> that measurably increases productivity while reducing environmental pressure. By combining
+        <em>multispectral imaging</em> with <em>AI‑powered analytics</em>, the solution diagnoses crop health with high fidelity and enables <strong>variable‑rate applications</strong>
+        that target inputs only where and when they are needed. Across diverse agro‑climatic contexts, the system will be validated at scale (≥10,000 ha), generating robust evidence for
+        <strong>≥30% reductions in water, fertiliser, and pesticide use</strong> within 36 months, with maintained or improved yields.
+      </p>
+      <p>
+        The project’s <strong>explainable decision‑support engine</strong> ensures transparency and human oversight. Farmers and advisors can trace recommendations through audit trails and
+        override in edge cases, reinforcing trust and regulatory acceptability. Interoperability with irrigation and spraying equipment, coupled with open APIs, enables seamless uptake in existing farm workflows.
+      </p>
+      <p>
+        To accelerate <strong>market adoption</strong>, the consortium will train ≥150 users across the value chain and equip cooperatives and service SMEs with a <em>go‑to‑market toolkit</em>
+        (business models, ROI calculators, certification packs). By lowering entry barriers through <em>Drones‑as‑a‑Service</em> and leasing options, smallholders gain affordable access.
+        This pathway is expected to yield <strong>+10–15% net margin/ha</strong> and payback within <strong>2–3 seasons</strong>, while creating new revenue opportunities for service providers.
+      </p>
+      <p>
+        The action addresses <strong>policy and regulatory</strong> requirements by preparing EASA‑aligned safety dossiers, data governance safeguards, and environmental assessments (LCA, GHG).
+        Two policy briefs and inputs to standardisation will support <em>Common Agricultural Policy (CAP)</em> implementation and EU sustainability goals. Overall, the causal chain is explicit:
+        <strong>innovative technology → validated performance → user trust → adoption at scale → environmental and economic gains</strong>.
+      </p>
+      <p>
+        The project contributes directly to the <span class="tag">Green Deal</span>, <span class="tag">Farm to Fork</span>, <span class="tag">Digital Transition</span>,
+        <span class="tag">SME Competitiveness</span>, and <span class="tag">Zero Pollution</span> agendas by coupling high‑impact field validation with concrete adoption mechanisms and policy alignment.
+      </p>
+      <div class="spacer"></div>
+      <h3>How to Use</h3>
+      <ol>
+        <li>Click <strong>Print / Save PDF</strong> to export for proposals or partner sharing.</li>
+        <li>Copy/paste rows into your HEU form sections (Objectives, Results, Impact).</li>
+        <li>Adjust targets to your consortium size, crops, and Member States.</li>
+      </ol>
+    </section>
+
+    <footer>
+      © 2025 – Sustainable Agricultural Drone System tables & narrative. Reuse under <strong>CC BY 4.0</strong>.
+    </footer>
+  </div>
+</body>
+</html>
